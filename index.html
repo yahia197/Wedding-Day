@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yahia & Alia's Katb Ketab</title>
+    <title>Yahia & Alia's Marriage Contract</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;500;600;700&display=swap">
     <style>
         body {
-            background-color: #f8f4e9;
+            background-color: #f0f6fb;
             font-family: 'Playfair Display', serif;
-            background-image: url('https://i.ibb.co/zVdNhpTc/mosque-sketch.jpg');
+            background-image: url('https://i.etsystatic.com/54691848/r/il/9abf84/6997927313/il_1588xN.6997927313_6ymw.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             position: relative;
         }
+
         body::before {
             content: '';
             position: absolute;
@@ -23,38 +26,34 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(248, 244, 233, 0.85);
+            background-color: rgba(240, 246, 251, 0.92);
             z-index: -1;
         }
+
         .handwritten {
             font-family: 'Dancing Script', cursive;
         }
-        .sketch-border {
-    border: 1px solid #ccc;
-    position: relative;
-}
-        .sketch-border::before {
-    content: '';
-    position: absolute;
-    top: -4px;
-    left: -4px;
-    right: -4px;
-    bottom: -4px;
-    border: 1px dashed #ccc;
-    pointer-events: none;
-}
-        .sketch-shadow {
-            box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.1);
+
+        .luxury-card {
+            box-shadow: 0 25px 50px -12px rgba(14, 116, 144, 0.12), 0 0 0 1px rgba(186, 230, 253, 0.6);
         }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #0c4a6e 0%, #0369a1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
         .map-icon {
-            filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2));
+            filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.1));
         }
-       
+
         .fade-in {
             opacity: 0;
             transform: translateY(20px);
             animation: fadeInUp 1s ease forwards;
         }
+
         @keyframes fadeInUp {
             to {
                 opacity: 1;
@@ -62,145 +61,154 @@
             }
         }
 
-        #slideshow-indicators span.active {
-    background-color: #b59b86;
-    transform: scale(1.2);
+        /* Minimalist botanical watermark corner decoration */
+        .botanical-corner {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            opacity: 0.15;
+            pointer-events: none;
+            background-repeat: no-repeat;
+            background-size: contain;
         }
-        
     </style>
 </head>
+
 <body class="min-h-screen flex items-center justify-center p-4">
-    <div class="max-w-3xl w-full backdrop-blur-sm bg-white/30 rounded-lg overflow-hidden border border-gray-300 shadow-md fade-in">
-        <!-- Header with Mosque Image -->
-        <div class="relative fade-in" style="animation-delay: 0.2s; animation-fill-mode: both;">
-            <img src="https://i.ibb.co/zVdNhpTc/mosque-sketch.jpg" alt="Mosque Sketch" class="w-full h-48 sm:h-64 md:h-96 object-cover object-center">
-            <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
-                <div class="text-center px-2 sm:px-4">
-                    <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold text-white handwritten mb-2 fade-in" style="animation-delay: 0.4s;">Yahia & Alia</h1>
-                    <p class="text-lg sm:text-xl md:text-2xl text-white handwritten fade-in" style="animation-delay: 0.6s;">Katb Ketab</p>
-                </div>
+    <div
+        class="relative max-w-3xl w-full backdrop-blur-md bg-white/75 rounded-3xl overflow-hidden luxury-card fade-in my-8">
+
+        <!-- Hero Header -->
+        <div
+            class="relative fade-in bg-gradient-to-b from-blue-900/10 to-transparent py-12 px-4 text-center border-b border-blue-100/60">
+            <div class="max-w-xl mx-auto space-y-3">
+                <span class="text-xs uppercase tracking-[0.3em] text-sky-700 font-semibold">The Wedding of</span>
+                <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold text-gradient handwritten py-1">Yahia & Alia</h1>
+                <p class="text-base sm:text-lg text-sky-800 font-medium tracking-wide">November 27, 2026 at 7:00 PM</p>
             </div>
         </div>
 
         <!-- Main Content -->
-        <div class="p-4 sm:p-8 md:p-12 space-y-6 fade-in" style="animation-delay: 0.8s;">
-            <!-- Photo Slideshow -->
-            <div class="mx-auto max-w-xs sm:max-w-sm md:max-w-md mb-6">
-                <img src="https://iili.io/KlUsRhQ.jpg" alt="Couple Photo" class="w-full h-auto rounded-lg shadow-md">
-            </div>
+        <div class="p-6 sm:p-10 md:p-14 space-y-10 fade-in" style="animation-delay: 0.3s;">
 
-
-            <!-- Date and Time -->
-            <div class="text-center">
-                <h2 class="text-xl sm:text-2xl md:text-3xl mb-2 ">24th October 2025</h2>
-                <p class="text-lg sm:text-xl md:text-2xl">6:30 PM - 8:30 PM</p>
-            </div>
-
-            <!-- Mosque Name -->
-            <div class="text-center border-t border-b border-gray-300 py-4">
-                <h3 class="text-lg sm:text-xl md:text-2xl">Hassan El Sharbatly Mosque</h3>
-            </div>
-
-            <!-- Location Links -->
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4">
-                <a href="https://maps.app.goo.gl/shwmVfJ7fqd5HhTM7" target="_blank" class="flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-gray-100 hover:bg-gray-200 rounded-full transition-colors duration-300 text-sm sm:text-base">
-                    <svg class="w-5 h-5 sm:w-6 sm:h-6 map-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                        <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"/>
-                    </svg>
-                    <span>Google Maps</span>
-                </a>
-                <a href="https://maps.apple.com/place?place-id=I3E50B58B9279398F&address=Moustafa+Amin+Street%2C+Cairo%2C+Egypt&coordinate=30.0292201%2C31.4304601&name=Hassan+El+Sharbatly+Mosque&_provider=9902" target="_blank" class="flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-gray-100 hover:bg-gray-200 rounded-full transition-colors duration-300 text-sm sm:text-base">
-                    <svg class="w-5 h-5 sm:w-6 sm:h-6 map-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                        <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"/>
-                    </svg>
-                    <span>Apple Maps</span>
-                </a>
-            </div>
-
-            <!-- Gift Note -->
-            <div class="text-center mt-6 sm:mt-8 p-4 bg-amber-50 rounded-lg border border-amber-200">
-                <p class="text-sm sm:text-xl md:text-2xl">
-                    A small gift of our appreciation awaits you.<br>
-                </p>
+            <!-- Event Location Details -->
+            <div
+                class="text-center space-y-3 bg-blue-50/40 p-6 sm:p-8 rounded-2xl border border-blue-100/80 shadow-sm transition-all hover:bg-blue-50/70">
+                <h2 class="text-2xl sm:text-3xl font-bold text-sky-900 tracking-wide">Tiba Rose Plaza</h2>
+                <p class="text-sky-800 font-semibold text-lg sm:text-xl handwritten">La Vandula hall</p>
+                <p class="text-gray-700 text-sm sm:text-base font-normal tracking-wide">Marshal Tantawi Street, Fifth
+                    Settlement (New Cairo), Cairo</p>
+                <div class="pt-3">
+                    <a href="https://maps.app.goo.gl/wKYxa6R6gVADQjbp9" target="_blank"
+                        class="inline-flex items-center gap-2 px-7 py-3 bg-sky-700 hover:bg-sky-800 text-white rounded-full transition-all duration-300 shadow-md text-sm sm:text-base font-medium tracking-wide">
+                        <svg class="w-5 h-5 map-icon fill-current text-white" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 384 512">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                        </svg>
+                        <span>Open in Google Maps</span>
+                    </a>
+                </div>
             </div>
 
             <!-- Countdown Timer -->
-            <div class="text-center mt-6 sm:mt-8">
-                <h3 class="text-lg sm:text-xl handwritten mb-2">Counting Down to Our Special Day</h3>
-                <div id="countdown" class="flex justify-center gap-2 sm:gap-4">
-                    <div class="text-center">
-                        <div class="text-2xl sm:text-3xl font-bold handwritten days">00</div>
-                        <div class="text-xs sm:text-sm">Days</div>
+            <div class="text-center">
+                <h3 class="text-xl sm:text-2xl handwritten text-sky-900 mb-4 font-normal">Counting Down to Our Special
+                    Day</h3>
+                <div id="countdown" class="grid grid-cols-4 gap-2 sm:gap-4 max-w-md mx-auto">
+                    <div
+                        class="bg-white/90 p-3 sm:p-4 rounded-2xl shadow-sm border border-blue-100/80 backdrop-blur-sm">
+                        <div id="days" class="text-2xl sm:text-3xl font-bold text-sky-800 handwritten">00</div>
+                        <div class="text-[10px] sm:text-xs text-gray-500 uppercase tracking-widest font-semibold">Days
+                        </div>
                     </div>
-                    <div class="text-center">
-                        <div class="text-2xl sm:text-3xl font-bold handwritten hours">00</div>
-                        <div class="text-xs sm:text-sm">Hours</div>
+                    <div
+                        class="bg-white/90 p-3 sm:p-4 rounded-2xl shadow-sm border border-blue-100/80 backdrop-blur-sm">
+                        <div id="hours" class="text-2xl sm:text-3xl font-bold text-sky-800 handwritten">00</div>
+                        <div class="text-[10px] sm:text-xs text-gray-500 uppercase tracking-widest font-semibold">Hours
+                        </div>
                     </div>
-                    <div class="text-center">
-                        <div class="text-2xl sm:text-3xl font-bold handwritten minutes">00</div>
-                        <div class="text-xs sm:text-sm">Minutes</div>
+                    <div
+                        class="bg-white/90 p-3 sm:p-4 rounded-2xl shadow-sm border border-blue-100/80 backdrop-blur-sm">
+                        <div id="minutes" class="text-2xl sm:text-3xl font-bold text-sky-800 handwritten">00</div>
+                        <div class="text-[10px] sm:text-xs text-gray-500 uppercase tracking-widest font-semibold">
+                            Minutes</div>
                     </div>
-                    <div class="text-center">
-                        <div class="text-2xl sm:text-3xl font-bold handwritten seconds">00</div>
-                        <div class="text-xs sm:text-sm">Seconds</div>
+                    <div
+                        class="bg-white/90 p-3 sm:p-4 rounded-2xl shadow-sm border border-blue-100/80 backdrop-blur-sm">
+                        <div id="seconds" class="text-2xl sm:text-3xl font-bold text-sky-800 handwritten">00</div>
+                        <div class="text-[10px] sm:text-xs text-gray-500 uppercase tracking-widest font-semibold">
+                            Seconds</div>
                     </div>
                 </div>
             </div>
 
+            <!-- Wedding Note Section -->
+            <div class="text-center p-6 sm:p-8 bg-blue-50/50 rounded-2xl border border-blue-100/80 shadow-sm">
+                <p class="text-base sm:text-xl italic handwritten text-sky-900 leading-relaxed">
+                    Our day wouldn’t be complete without the people we love the most celebrating with us!<br>
+                    We can’t wait to share all the love, laughter, and happy moments with you
+                </p>
+            </div>
+
+            <!-- Embedded Google Form RSVP Section -->
+            <div class="bg-white/90 p-4 sm:p-8 rounded-3xl border border-blue-100/80 shadow-sm backdrop-blur-sm">
+                <div class="text-center mb-6">
+                    <h3 class="text-2xl sm:text-3xl font-bold text-sky-900 handwritten">Are You Attending?</h3>
+                    <p class="text-sm text-gray-600 mt-1">Please let us know if you'll be able to join us</p>
+                </div>
+
+                <div class="flex justify-center w-full overflow-hidden">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSdo6ikqQKqQoAx5_NAVVXwBbWHKjO9HC9GYyGTTWlDi3auuug/viewform?embedded=true&hl=en"
+                        class="w-full max-w-xl" height="1100" frameborder="0" marginheight="0"
+                        marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
+
             <!-- Footer -->
-            <div class="text-center text-xs sm:text-sm text-gray-600 mt-10">
-                <p class="text-lg leading-relaxed">We are honored by your presence...</p>
-                <p class="mt-2 handwritten text-base sm:text-lg">Yahia & Alia</p>
+            <div class="text-center text-xs sm:text-sm text-gray-600 pt-6 border-t border-blue-100/80 space-y-1">
+                <p class="tracking-wide">We are honored by your presence on this special day</p>
+                <p class="text-xs text-gray-500 pt-1">Wishing your lovely kids a good night and sweet dreams!</p>
+                <p class="handwritten text-2xl text-sky-900 pt-2">Yahia & Alia</p>
             </div>
         </div>
     </div>
+
+    <!-- Scripts -->
     <script>
-    const slides = document.querySelectorAll(".slide");
-    const indicators = document.querySelectorAll("#slideshow-indicators span");
-    let currentSlide = 0;
+        document.addEventListener("DOMContentLoaded", function() {
+            const countDownDate = new Date("2026-11-27T19:00:00+02:00").getTime();
 
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.style.opacity = i === index ? "1" : "0";
+            const x = setInterval(function() {
+                const now = new Date().getTime();
+                const distance = countDownDate - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                const daysEl = document.getElementById("days");
+                const hoursEl = document.getElementById("hours");
+                const minutesEl = document.getElementById("minutes");
+                const secondsEl = document.getElementById("seconds");
+
+                if (daysEl) daysEl.innerText = Math.max(0, days).toString().padStart(2, '0');
+                if (hoursEl) hoursEl.innerText = Math.max(0, hours).toString().padStart(2, '0');
+                if (minutesEl) minutesEl.innerText = Math.max(0, minutes).toString().padStart(2, '0');
+                if (secondsEl) secondsEl.innerText = Math.max(0, seconds).toString().padStart(2, '0');
+
+                if (distance < 0) {
+                    clearInterval(x);
+                    const countdownContainer = document.getElementById("countdown");
+                    if (countdownContainer) {
+                        countdownContainer.innerHTML = "<div class='col-span-4 text-xl font-bold text-sky-900 handwritten py-2'>The wedding has begun!</div>";
+                    }
+                }
+            }, 1000);
         });
-        indicators.forEach((dot, i) => {
-            dot.classList.toggle("active", i === index);
-        });
-    }
+    </script>
+</body>
 
-    showSlide(currentSlide);
-
-    setInterval(() => {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
-    }, 4000);
-
-    // Countdown timer stays unchanged
-    const weddingDate = new Date("2025-10-24T17:30:00+02:00");
-    const countDownDate = weddingDate.getTime();
-
-    const x = setInterval(function() {
-        const now = new Date();
-        const options = { timeZone: 'Africa/Cairo' };
-        const egyptTime = new Date(now.toLocaleString('en-US', options));
-        const nowTime = egyptTime.getTime();
-
-        const distance = countDownDate - nowTime;
-
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        document.querySelector(".days").innerHTML = days.toString().padStart(2, '0');
-        document.querySelector(".hours").innerHTML = hours.toString().padStart(2, '0');
-        document.querySelector(".minutes").innerHTML = minutes.toString().padStart(2, '0');
-        document.querySelector(".seconds").innerHTML = seconds.toString().padStart(2, '0');
-
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("countdown").innerHTML = "The wedding has begun!";
-        }
-    }, 1000);
-</script>
 </html>
